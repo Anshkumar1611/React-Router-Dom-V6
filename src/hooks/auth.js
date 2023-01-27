@@ -19,9 +19,11 @@ export function reducer(state, action) {
 
 // Provider
 export function AuthProvider({ children }) {
-    const [authed,dispatch]=useReducer(reducer,initialState)
+  const [authed, dispatch] = useReducer(reducer, initialState);
   return (
-    <authContext.Provider value={[authed,dispatch]}>{children}</authContext.Provider>
+    <authContext.Provider value={[authed, dispatch]}>
+      {children}
+    </authContext.Provider>
   );
 }
 

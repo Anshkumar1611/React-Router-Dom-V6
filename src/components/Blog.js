@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <div>
       <p>Blog</p>
-      <Button text="Logout" />
+      <Button text="Logout" type="logout" url="/login"/>
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
-import AuthConsumer from "../hooks/auth,";
+import AuthConsumer from "../hooks/auth";
 
 const Home = () => {
-  const auth = AuthConsumer();
-  console.log(auth);
+  const [authed]= AuthConsumer();
+  console.log(authed);
   return (
     <main>
       <div className="flex justify-center bg-gray-100">
@@ -14,7 +14,7 @@ const Home = () => {
         </p>
       </div>
       <Navbar />
-      <div className="flex justify-center py-2">
+      <div className="flex justify-center text-center py-2">
         <Outlet></Outlet>
       </div>
     </main>

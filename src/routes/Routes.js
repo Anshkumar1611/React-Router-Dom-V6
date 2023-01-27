@@ -1,5 +1,5 @@
 import Home from "../components/Home";
-import {Login,ErrorPage,Blog,Settings} from "../components/index"
+import { Login, ErrorPage, Blog, Settings } from "../components/index";
 
 const Routes = [
   {
@@ -27,12 +27,6 @@ const Routes = [
         path: "/settings",
         element: <Settings />,
         RouteName: "Settings",
-        protected: true,
-      },
-      {
-        path: "/logout",
-        element: <div>Logout</div>,
-        RouteName: "Logout",
         protected: true,
       },
     ],

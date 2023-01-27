@@ -5,7 +5,7 @@ const Settings = () => {
   return (
     <div>
       <p>Settings</p>
-      <Button text="Logout" />
+      <Button text="Logout" type="logout" url="/login" />
     </div>
   );
 };
